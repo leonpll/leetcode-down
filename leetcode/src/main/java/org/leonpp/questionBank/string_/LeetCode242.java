@@ -5,6 +5,10 @@ package org.leonpp.questionBank.string_;
  * @description: 给定两个字符串 s 和 t ，编写一个函数来判断 t 是否是 s 的字母异位词
  * @author: LL
  * @create: 2020-04-27 13:24
+ *
+ *
+ *  * 来源：力扣（LeetCode）
+ *  * 链接：https://leetcode-cn.com/problems/valid-parentheses
  **/
 public class LeetCode242 {
 
