@@ -12,7 +12,7 @@ package org.leonpp.questionBank.tree;
 public class LeetCode572 {
 
 
-    class TreeNode {
+    static class TreeNode {
 
 
         int val;
@@ -63,6 +63,30 @@ public class LeetCode572 {
         return isSameTree(s.left, t.left) && isSameTree(s.right, t.right);
     }
 
+
+    public static void main(String[] args) {
+        TreeNode node1 = new TreeNode(3);
+        TreeNode node2 = new TreeNode(1);
+        TreeNode node3 = new TreeNode(5);
+        TreeNode node4 = new TreeNode(1);
+        TreeNode node5 = new TreeNode(1);
+
+        node1.left = node2;
+        node1.right = node3;
+        node2.left = node4;
+        node2.right = node5;
+
+        TreeNode node6 = new TreeNode(1);
+        TreeNode node7 = new TreeNode(1);
+        TreeNode node8 = new TreeNode(1);
+
+        node6.left = node7;
+        node6.right = node8;
+
+
+        LeetCode572 le = new LeetCode572();
+        System.out.println(le.isSubtree(node1, node6));
+    }
 
     /**
      * 参考https://leetcode-cn.com/problems/subtree-of-another-tree/solution/java-di-gui-ban-by-kelly2018/
